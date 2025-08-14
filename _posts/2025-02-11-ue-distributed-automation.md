@@ -50,7 +50,7 @@ Here's our super advanced gui that sends the string “hello world” in its ape
 
 Put simply, we package up the gui values and invoke the api python function directly from the widget, as shown in this blueprint function.
 
-<img src="https://i.imgur.com/5dVkxii.png">
+<img src="https://i.imgur.com/Tqo3iYG.png">
 
 Here I have set up a simplistic test running the broker and a mock subscriber on the same machine as the unreal client.
 On the left you can see the Mycelia broker terminal and on the right is the consumer, which just prints its incoming data to std out.

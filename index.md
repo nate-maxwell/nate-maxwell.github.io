@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-## About me
+## About Me
 
 I'm an art production pipeline engineer and tech artist. I've been bouncing
 back and forth between games and films for several years now.

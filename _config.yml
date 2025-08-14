@@ -11,4 +11,4 @@ plugins:
 # Build settings
 markdown: kramdown
 highlighter: rouge
-theme: slate
+theme: jekyll-theme-slate

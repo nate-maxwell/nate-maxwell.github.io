@@ -1,0 +1,18 @@
+---
+# Only needed for SCSS in Jekyll
+---
+
+@import "{{ site.theme }}";
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  a {
+    color: #82aaff;
+  }
+  header, footer {
+    background-color: #1f1f1f;
+  }
+}

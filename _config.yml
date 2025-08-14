@@ -3,12 +3,14 @@ description: A collection of various experiments and projects of mine.
 url: "https://nate-maxwell.github.io/"
 baseurl: "/nate-maxwell.github.io/"
 
+remote_theme: pages-themes/hacker@v0.2.0
+
 # GitHub Pages settings
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-remote-theme
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
-theme: minima

@@ -9,7 +9,17 @@ Welcome to my blog! Here are all my posts:
 
 ## Post History
 
-- [Blog Migration](/blog-migration/) - *8/14/25*
-- [UE Rain Material](/ue-rain-material/) - *Circa 2019*
-- [PY Poor Man's IDE](/poor-mans-ide/) - *Circa 2020*
-- [UE Distributed Automation](/ue-distributed-automation/) - *Circa 2024*
+<ul>
+{% assign sorted_posts = site.posts | sort: 'date' | reverse %}
+{% for post in sorted_posts %}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    {% if post.date %}
+      - *{{ post.date | date: "%-m/%-d/%y" }}*
+    {% endif %}
+    {% if post.categories %}
+      — {{ post.categories | join: ', ' }}
+    {% endif %}
+  </li>
+{% endfor %}
+</ul>

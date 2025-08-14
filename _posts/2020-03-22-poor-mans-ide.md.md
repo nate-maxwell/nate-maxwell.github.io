@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "PY Poor Man's IDE"
-date: 2025-08-14
+date: 2023-03-22
 permalink: /py-poor-mans-ide/
 categories:
     - "Python"

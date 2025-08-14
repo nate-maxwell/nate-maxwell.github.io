@@ -1,7 +1,6 @@
 title: Nate Maxwell
 description: A collection of various experiments and projects of mine.
 url: "https://nate-maxwell.github.io/"
-baseurl: "/nate-maxwell.github.io/"
 
 # GitHub Pages settings
 plugins:

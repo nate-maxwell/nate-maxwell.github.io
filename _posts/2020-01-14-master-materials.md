@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "UE Master Material"
+title: "UE Detail Mask-Based Master Material"
 date: 2020-01-14
 permalink: /ue-master-material/
 author: Nate Maxwell

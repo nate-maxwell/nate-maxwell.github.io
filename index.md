@@ -1,3 +1,8 @@
+---
+layout: home
+title: Home
+---
+
 # Nate Maxwell's Blog
 
 Welcome to my blog! Here are all my posts:

@@ -21,7 +21,7 @@ By offsetting the panner time with some noise, we get independent droplet moveme
 
 Finally, we can use the HeightToNormalSmooth node, if we didn't want to make and animate a normal map ourselves, and we get some pixel height mimicking an actual splash and surface variation.
 
-The surface:
+The surface (with cranked up normals for easier view):
 
 <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXVpdmtoazNodHF5Y2M0eG02MnhpYmpsODdqNG1pY2xpdGp0dzE4MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cHmJrFmceplPHBY42t/giphy.gif">
 

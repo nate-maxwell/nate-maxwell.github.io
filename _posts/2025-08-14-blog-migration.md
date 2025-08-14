@@ -3,6 +3,8 @@ layout: post
 title: "Blog Migration"
 date: 2025-08-14
 permalink: /blog-migration/
+categories:
+    - "Update"
 ---
 
 # Blog Migration

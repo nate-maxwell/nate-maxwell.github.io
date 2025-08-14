@@ -1,7 +1,8 @@
-# Blog Migration
+# Nate Maxwell's Blog
 
-After taking down my website due to malware and the general frustration with my hosting service’s customer support, I have begun moving my blog here to Git Hub.
+Welcome to my blog! Here are all my posts:
 
-Slowly but surely all postings will be moved over. I will be starting with the smaller posts as I try to recreate all of the gifs / graphs / documents / etc for each larger post.
+## Post History
 
-Therefore, posts will continue to appear, but they may not be in contiguous order!
+- [Blog Migration](./posts/00_Blog_Migration.md) - *8/14/25*
+- [UE Rain Material](./posts/01_UE_Rain_Droplets_Material.md) - *Circa 2019*

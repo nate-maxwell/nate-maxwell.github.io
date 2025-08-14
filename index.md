@@ -8,8 +8,15 @@ title: Home
 I'm an art production pipeline engineer and tech artist. I've been bouncing
 back and forth between games and films for several years now.
 
-I've worked on several games as an unreal technical artist and built an entire
-previz / postviz / techviz / virtual production pipeline at Digital Domain 3.0.
+I've worked on several games as an unreal technical artist, such as The Quarry,
+Crossfire X, and several unannounced games.
+
+I often work on real-time 'adjacent' projects that aren't quite games but are
+still entertainment experiences using game engines such as the award-winning
+VR exhibit: Time Magazine's The March.
+
+Additionally, I've architected and helped build a previz / postviz / techviz /
+virtual production pipeline at Digital Domain 3.0.
 
 You can see my film work history [here](https://github.com/nate-maxwell) and
 view my resume

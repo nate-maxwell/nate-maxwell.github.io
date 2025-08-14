@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Blog Migration"
+date: 2025-08-14
+permalink: /blog-migration/
+---
+
 # Blog Migration
 
 After taking down my website due to malware and the general frustration with my hosting service’s customer support, I have begun moving my blog here to Git Hub.

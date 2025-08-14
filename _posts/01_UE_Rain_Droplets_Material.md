@@ -1,8 +1,10 @@
 ---
 layout: post
-title: "UE Rain Shader"
-date: 2019 12:00:00 -0000
-categories: Unreal
+title: "UE Rain Droplets Material"
+date: 2025-08-14
+permalink: /ue-rain-drop-material/
+categories:
+    - "Unreal"
 ---
 
 Lately I have been playing around with the GenerateBand material function and have been animating the coordinates using some noise maps to create rain drop ripple effects.

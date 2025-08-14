@@ -1,8 +1,10 @@
 ---
 layout: post
-title: "Distributing Automation In Unreal"
-date: 2024
-categories: Unreal
+title: "UE Distributed Automation"
+date: 2025-08-14
+permalink: /ue-distributed-automation/
+categories:
+    - "Unreal"
 ---
 
 # Distributing Automation In Unreal

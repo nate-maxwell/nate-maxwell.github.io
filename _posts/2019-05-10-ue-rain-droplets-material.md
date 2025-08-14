@@ -3,6 +3,7 @@ layout: post
 title: "UE Rain Droplets Material"
 date: 2019-05-10
 permalink: /ue-rain-drop-material/
+author: Nate Maxwell
 categories:
     - "Unreal"
 ---

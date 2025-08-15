@@ -24,6 +24,8 @@ Achieving this was fairly straightforward using a pretty standard pub/sub model 
 This way artist workstations only needed to connect to one other machine, and they could gain access to full pipeline functionality.
 This all sounds way more interesting than it really is.
 
+<img src="https://i.imgur.com/fQxTvqb.png">
+
 This was achieved using my, currently simple, event broker Mycelia.
 Mycelia is an event broker written in Go to leverage its concurrency model for speed.
 The primary architecture uses channels in routes and subscribers can specify which channel in a route they would like to receive event notifications from.

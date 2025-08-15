@@ -15,7 +15,7 @@ I often work on real-time 'adjacent' projects that aren't quite games but are
 still entertainment experiences using game engines such as the award-winning
 VR exhibit: Time Magazine's The March.
 
-Additionally, I've architected and helped build a previz / postviz / techviz /
+Additionally, I've architected and helped build a previz + postviz + techviz +
 virtual production pipeline at Digital Domain 3.0.
 
 You can see my some work history [here](https://github.com/nate-maxwell)

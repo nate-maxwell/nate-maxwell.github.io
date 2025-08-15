@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "UE Distributed Automation"
-date: 2025-02-11
+date: 2025-05-11
 permalink: /ue-distributed-automation/
 author: Nate Maxwell
 categories:

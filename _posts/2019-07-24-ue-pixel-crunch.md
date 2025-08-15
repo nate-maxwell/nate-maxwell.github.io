@@ -38,7 +38,7 @@ the floating points), then divide by the number previously multiplied by, you
 end up with a pixel crunched UV.
 
 Here you can see in the first quadrant normal 0 to 1 UV values. If you were to
-mask x or y in this space, it would be a linear gradient from 0 to 1 representing
+mask x or y in this space it would be a linear gradient from 0 to 1 representing
 all floating point values between. In quadrant two you can see that the UV
 space has been multiplied by 10, stretching it from 0 to 10, and stretching all
 floating point values between. If we remove the floating point values, in the
@@ -69,5 +69,5 @@ seems today that too many developers stop here and assume they've achieved the
 retro look. If you're trying to capture the N64 nostalgia, trilinear filtering
 is crucial as textures on that platform were often desaturated and blurrier
 than its PS1 counterpart. Meanwhile, the PS1 was a lower bit system and therefore
-performed some aggressive rounding for vertex position resulting in that "wobbly"
+performed some agressive rounding for vertex position resulting in that "wobbly"
 look on the models.

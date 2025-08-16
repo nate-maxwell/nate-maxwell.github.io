@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-## About Me
+# About Me
 
 I'm an art production pipeline engineer and tech artist. I've been bouncing
 back and forth between games and films for several years now.
@@ -22,7 +22,7 @@ You can see my some [work history](https://github.com/nate-maxwell)
 (if I remember to update it) and view my [resume](https://drive.google.com/file/d/1eOH0F--fB2kRQgTsufzLRqK6Efaz4pTP/view?usp=sharing),
 as well as my [linkedin](https://www.linkedin.com/in/nathandmaxwell/).
 
-## Post History
+# Post History
 
 <ul>
 {% assign sorted_posts = site.posts | sort: 'date' | reverse %}

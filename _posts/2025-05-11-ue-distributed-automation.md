@@ -39,6 +39,7 @@ the broker for another trip, making observability and event tracking more painfu
 
 Mycelia is in the early days of development and uses an incredibly primitive custom protocol.
 Some friends and I who are working on it have written APIs for clients to talk to the broker machine in Python, Go, and C#.
+I've covered Mycelia in great detail in a previous post.
 
 The point of this entry isn’t really about the inner workings of Mycelia, but rather getting a developer’s Unreal client to talk directly to another machine.
 

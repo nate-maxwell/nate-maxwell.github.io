@@ -19,7 +19,7 @@ Additionally, I've architected and helped build a previz + postviz + techviz +
 virtual production pipeline at Digital Domain 3.0.
 
 You can see my some [work history](https://github.com/nate-maxwell)
-(if I remember to update it) and view my [resume](https://drive.google.com/file/d/11D7EMN3QdCTIFKhBteWEr4Emn7nQPYvG/view?usp=sharing),
+(if I remember to update it) and view my [resume](https://drive.google.com/file/d/1eOH0F--fB2kRQgTsufzLRqK6Efaz4pTP/view?usp=sharing),
 as well as my [linkedin](https://www.linkedin.com/in/nathandmaxwell/).
 
 ## Post History

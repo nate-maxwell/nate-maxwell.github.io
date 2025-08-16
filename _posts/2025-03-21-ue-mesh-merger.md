@@ -1,11 +1,17 @@
 ---
 layout: post
-title: "UE Mesh Merger"
+title: "[UE] Mesh Merger"
 date: 2025-03-21
 permalink: /ue-mesh-merger/
 author: Nate Maxwell
 categories:
     - "Unreal"
+tags:
+    - "unreal"
+    - "python"
+    - "tool"
+    - "optimization"
+    - "indie"
 ---
 
 Many friends of mine are working on small indie games with 2 to 8-man teams.

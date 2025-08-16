@@ -1,16 +1,21 @@
 ---
 layout: post
-title: "UE Pixel Crunch Post Process"
+title: "[UE] Pixel Crunch Post Process"
 date: 2019-07-24
 permalink: /ue-pixel-crunch-post-process/
 author: Nate Maxwell
 categories:
     - "Unreal"
+tags:
+    - "unreal"
+    - "shader"
+    - "material"
+    - "uv"
 ---
 
-## Anemoia
+# Anemoia
 
-### Noun
+## Noun
     1. Nostalgia for a time or a place one has never known.
 
 I grew up in the 90s but was too young to understand gaming culture or the

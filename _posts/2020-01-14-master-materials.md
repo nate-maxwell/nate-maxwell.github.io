@@ -1,11 +1,17 @@
 ---
 layout: post
-title: "UE Detail Mask-Based Master Material"
+title: "[UE] Detail Mask-Based Master Material"
 date: 2020-01-14
 permalink: /ue-master-material/
 author: Nate Maxwell
 categories:
     - "Unreal"
+tags:
+    - "unreal"
+    - "shader"
+    - "material"
+    - "master"
+    - "mask"
 ---
 
 As of the past few weeks I've been going through my preferred material library

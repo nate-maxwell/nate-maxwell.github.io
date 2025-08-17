@@ -20,19 +20,6 @@ would create a toolbar in UMG and load the asset on startup in my
 `init_unreal.py` file from my plugin like so:
 
 ```python
-"""
-Project Run
-natedmaxwell@gmail.com
-03.01.23
-_______________________________________________________________________________
-Update History:
-1.0.0 - Init
-_______________________________________________________________________________
-Description: Objects to call or run on project startup in Silver Pipeline
-_______________________________________________________________________________
-Notes: Init extra functions in Plugin/Content/Python/
-"""
-
 from pathlib import Path
 
 import unreal

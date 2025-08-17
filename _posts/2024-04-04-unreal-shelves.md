@@ -41,10 +41,10 @@ the 'content' folder - `/PluginName/dir/dir/AssetName.AssetName`.
 I really dislike the number of path types in unreal, which are shared by both
 editor utility blueprints and the python API:
 
-* Display Name & Asset Name = AssetName
-* Path Name & Object Path   = /Game/dir/dir/AssetName.AssetName
-* Package Path              = /Game/dir/dir
-* Package Name              = /Game/dir/dir/AssetName
+* Display Name & Asset Name = `AssetName`
+* Path Name & Object Path   = `/Game/dir/dir/AssetName.AssetName`
+* Package Path              = `/Game/dir/dir`
+* Package Name              = `/Game/dir/dir/AssetName`
 
 Seriously, why are there so many?!
 

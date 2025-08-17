@@ -35,8 +35,8 @@ launch_toolbar()
 
 Side note - to get asset paths from the primary project content folder, you
 would use a path like `/Game/dir/dir/AssetName.AssetName`, but for plugins the
-`/Game/` directory is instead the plugin name -
-`/PluginName/dir/dir/AssetName.AssetName`.
+`/Game/` directory is instead the plugin name, and there is no substitute for
+the 'content' folder - `/PluginName/dir/dir/AssetName.AssetName`.
 
 I really dislike the number of path types in unreal, which are shared by both
 editor utility blueprints and the python API

@@ -80,7 +80,7 @@ models.
 
 <img src="https://i.imgur.com/qJYuexV.gif">
 
-This is also very trivial to achieve. Using the same method but using our
+This is also very trivial to achieve. We perform the same method but using our
 Camera Relative World Position as our source values to offset. We just apply
 the crunched values to the vertexes instead of UVs. The effect looks much
 better on lower poly models than higher ones.

@@ -76,3 +76,12 @@ is crucial as textures on that platform were often desaturated and blurrier
 than its PS1 counterpart. Meanwhile, the PS1 was a lower bit system and therefore
 performed some agressive rounding for vertex position resulting in that "wobbly"
 look on the models.
+
+<img src="https://i.imgur.com/qJYuexV.gif">
+
+This is also very trivial to achieve. Using the same method but dividing
+before multiplying and using our Camera Relative World Position as our source
+data gives us the necessary world position offset for the vertexes. The effect
+looks much better on lower poly models than higher ones.
+
+<img src="https://i.imgur.com/JLVKKLH.png">

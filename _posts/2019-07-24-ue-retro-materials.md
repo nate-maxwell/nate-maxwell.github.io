@@ -2,7 +2,7 @@
 layout: post
 title: "[UE] Retro Materials"
 date: 2019-07-24
-permalink: /ue-pixel-crunch-post-process/
+permalink: /ue-retro-materials/
 author: Nate Maxwell
 categories:
     - "Unreal"

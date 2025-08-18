@@ -80,9 +80,9 @@ look on the models.
 
 <img src="https://i.imgur.com/qJYuexV.gif">
 
-This is also very trivial to achieve. Using the same method but dividing
-before multiplying and using our Camera Relative World Position as our source
-values to offset. We just apply the crunched values to the vertexes instead of
-UVs. The effect looks much better on lower poly models than higher ones.
+This is also very trivial to achieve. Using the same method but using our
+Camera Relative World Position as our source values to offset. We just apply
+the crunched values to the vertexes instead of UVs. The effect looks much
+better on lower poly models than higher ones.
 
-<img src="https://i.imgur.com/JLVKKLH.png">
+<img src="https://i.imgur.com/1hcrO0h.png">

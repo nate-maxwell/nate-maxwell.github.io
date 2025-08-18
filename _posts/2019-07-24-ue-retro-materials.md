@@ -75,8 +75,8 @@ seems today that too many developers stop here and assume they've achieved the
 retro look. If you're trying to capture the N64 nostalgia, trilinear filtering
 is crucial as textures on that platform were often desaturated and blurrier
 than its PS1 counterpart. Meanwhile, the PS1 was a lower bit system and therefore
-performed some aggressive rounding for vertex position resulting in that "wobbly"
-look on the models.
+only used integers for vertex position resulting in that "wobbly" look on the
+models.
 
 <img src="https://i.imgur.com/qJYuexV.gif">
 

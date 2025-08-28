@@ -76,7 +76,12 @@ length prefix, or a termination byte. I've chosen the former.
 broker: { `SEND`, `ADD`, `REMOVE` }.
 
 This effectively makes the header a 4byte length prefix followed by 3 bytes
-that denote protocol version, argument 1, and argument 2.
+that denote protocol version, argument 1, and argument 2. And because the
+ObjType and CmdType fields are single byte values, 256 possible integers per
+field, we achieve 65536 argument configurations.
+
+I doubt Mycelia will even have 256 object types for messages, or even 256
+commands for a single type.
 
 ## Sub-Header
 The sub-header comprises two variable length fields each of which contain a

@@ -16,8 +16,8 @@ tags:
 ---
 
 Today I am writing a follow-up post to the post about my golang message broker
-I posted back in May. I still think it has quite a ways to go before a version
-1 release.
+I posted back in [May](https://nate-maxwell.github.io/go-mycelia-event-broker/).
+I still think it has quite a ways to go before a version  1 release.
 
 Today I thought I would write about the custom protocol I've been developing
 for it. It's not fancy or advanced, but it was a fantastic learning exercise.

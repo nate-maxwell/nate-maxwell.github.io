@@ -22,7 +22,7 @@ I posted back in May. I still think it has quite a ways to go before a version
 Today I thought I would write about the custom protocol I've been developing
 for it. It's not fancy or advanced, but it was a fantastic learning exercise.
 
-Originally it was some overly simplistic python code that called:
+Originally it was some overly simplistic python code:
 ```python
 def _serialize_command(cmd: Command) -> str:
     delimiter = ';;'

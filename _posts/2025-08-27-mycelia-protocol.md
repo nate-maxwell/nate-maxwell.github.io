@@ -46,7 +46,7 @@ send messages with `\n` or `;;` inside of them, as well as shortening the
 message size to the bare minimum and decoupling the object type from the given
 command (`MESSAGE.ADD` VS `send_message`).
 
-### Breakdown
+# Breakdown
 This protocol isn't meant to work with additional applications, only clients
 and Mycelia itself.
 
@@ -55,7 +55,7 @@ sized sub-header, and a body.
 
 <img src="https://i.imgur.com/UE35YBK.png">
 
-#### Header
+## Header
 The header contains 4 fields, although I expect one to be removed upon full
 release.
 * <u>Message Length</u>
@@ -78,7 +78,7 @@ broker: { `SEND`, `ADD`, `REMOVE` }.
 This effectively makes the header a 4byte length prefix followed by 3 bytes
 that denote protocol version, argument 1, and argument 2.
 
-#### Sub-Header
+## Sub-Header
 The sub-header comprises two variable length fields each of which contain a
 `uint32` length prefix and a value.
 * <u>UID</u>
@@ -90,7 +90,7 @@ The sub-header comprises two variable length fields each of which contain a
 by the route while subscribers and transformers are added to specific channels
 on the route, which is why the fields diverge from here.
 
-#### Body
+## Body
 The body currently comes in two forms.
 * <u>Subscriber + Transformer</u>
 

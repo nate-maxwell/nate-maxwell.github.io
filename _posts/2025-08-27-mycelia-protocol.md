@@ -72,7 +72,7 @@ length prefix, or a termination byte. I've chosen the former.
 `SUBSCRIBER`, `TRANSFORMER` }.
 * <u>Command Type</u>
 
-    What we what the object to do with the object value that was sent to the
+    What we want the object to do with the object value that was sent to the
 broker: { `SEND`, `ADD`, `REMOVE` }.
 
 This effectively makes the header a 4byte length prefix followed by 3 bytes

@@ -44,7 +44,7 @@ This was great in the very beginning while I focussed my attention on the
 structure of the broker. I knew that it needed reworking so that clients could
 send messages with `\n` or `;;` inside of them, as well as shortening the
 message size to the bare minimum and decoupling the object type from the given
-command (`MESSAGE.ADD` VS `send_message`).
+command (`MESSAGE.SEND` VS `send_message`).
 
 # Breakdown
 This protocol isn't meant to work with additional applications, only clients

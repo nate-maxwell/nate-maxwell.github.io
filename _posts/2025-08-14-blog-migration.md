@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Blog Migration"
+title: "[BLOG] Post Migration"
 date: 2025-08-14
 permalink: /blog-migration/
 author: Nate Maxwell

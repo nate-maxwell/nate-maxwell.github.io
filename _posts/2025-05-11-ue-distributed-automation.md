@@ -6,6 +6,12 @@ permalink: /ue-distributed-automation/
 author: Nate Maxwell
 categories:
     - "Unreal"
+tags:
+    - "Unreal"
+    - "Distribution"
+    - "Network"
+    - "Service"
+    - "Golang"
 ---
 
 My roommate recently set up a build machine with a jenkins bot to make nightly

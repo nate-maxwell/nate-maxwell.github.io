@@ -6,8 +6,11 @@ permalink: /ue-plugin-manager/
 author: Nate Maxwell
 categories:
     - "Unreal"
+tags:
+    - "Unreal"
     - "Plugins"
     - "Python"
+    - "UMG"
 ---
 
 I've been poking around the broader facility pipeline code and see this

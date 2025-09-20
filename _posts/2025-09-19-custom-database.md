@@ -5,7 +5,7 @@ date: 2025-09-19
 permalink: /orchid-database/
 author: Nate Maxwell
 categories:
-    - "Update"
+    - "Go"
 tags:
     - "database" 
     - "go"

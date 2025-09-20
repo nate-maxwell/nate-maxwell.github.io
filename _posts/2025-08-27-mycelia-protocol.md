@@ -5,7 +5,7 @@ date: 2025-08-27
 permalink: /custom-protocol/
 author: Nate Maxwell
 categories:
-    - "Update"
+    - "Go"
 tags:
     - "protocol" 
     - "go"

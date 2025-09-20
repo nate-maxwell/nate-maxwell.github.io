@@ -45,12 +45,12 @@ smaller than the page size.
 
 Having a consistent size means that the storage engine can simply open a file
 and read `pageNum * pageSize` bytes into the file to get the start of a page.
-Almost always developers will mark the start of a page with a "magic number"
-which is a sequence of bytes that denotes the start of a page. This is to
-verify that the page offset was correctly determined and that no drifting
-occurred when inserting/updating pages. It would also be a massive coincidence
-if another program placed the exact byte values you were looking for at the
-exact offset you were reading, giving us some form of file validation.
+Almost always developers will mark pages with a "magic number" which is a
+sequence of bytes that denotes the start of a page. This is to verify that the
+page offset was correctly determined and that no drifting occurred when
+inserting/updating pages. It would also be a massive coincidence if another
+program placed the exact byte values you were looking for at the exact offset
+you were reading, giving us some form of file validation.
 
 A page is just an array of bytes. Anything can be stored in a page, although
 there are some common configurations that many databases use. The most common

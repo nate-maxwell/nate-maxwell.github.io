@@ -75,10 +75,10 @@ binary trees, but with reduced height by storing multiple values in a node.
 Internal nodes store t number values where t is the degrees of the tree. This
 makes it more ideal for high latency systems such as disk storage.
 
-Traversing a B-Tree involves starting at the root, compare the target key with
-the keys in the current node. If it matches, return it. If it’s smaller (or
-falls between two keys), follow the corresponding child pointer. Repeat until
-the key is found or a leaf is reached.
+Traversing a B-Tree involves starting at the root and comparing the target key
+with the keys in the current node. If it matches, return it. If it’s smaller
+(or falls between two keys), follow the corresponding child pointer. Repeat
+until the key is found or a leaf is reached.
 
 If inserting a key into a full node, create two new half-full nodes by moving
 the median key up into the parent. Keys less than the median stay in the left

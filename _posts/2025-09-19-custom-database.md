@@ -155,13 +155,12 @@ Some examples are:
 and columns, but unlike relational databases, the names and format of columns
 can vary from row to row.
 
-# OrchidDB
+# Orchid DB
 
 After intensely researching night after night, suddenly realizing it was 3am, I
 decided to make an attempt at my own database.
 
-Orchid is a rather simplistic
-Key-Value store.
+<img src="https://i.imgur.com/BB4lfvi.png">
 
 I chose a KV store as the data structure is simpler, for learning purposes, and
 it can reasonably emulate relational table functionality by staggering the data

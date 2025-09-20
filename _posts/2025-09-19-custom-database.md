@@ -160,7 +160,7 @@ can vary from row to row.
 After intensely researching night after night, suddenly realizing it was 3am, I
 decided to make an attempt at my own database.
 
-[Orchid](https://github.com/SignalWeave/OrchidDB) is a rather simplistic
+Orchid is a rather simplistic
 Key-Value store.
 
 I chose a KV store as the data structure is simpler, for learning purposes, and

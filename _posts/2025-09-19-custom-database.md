@@ -65,8 +65,8 @@ Databases are typically classified into two broad families: Sql and NoSql.
 Sql databases, broadly speaking, are any relational database that uses
 Structured Query Language to manage tables and rows by creating conditional
 table joins to manage an in-memory table that is the result of a query.
-Sql-like databases are the most common kind. Think SQLite, MySQL, PostgreSQL,
-Oracle, etc.
+Sql-like databases are the most common kind. Think `SQLite`, `MySQL`,
+`PostgreSQL`, `Oracle`, etc.
 
 NoSql databases are pretty much all other databases that do not fit the Sql
 description.

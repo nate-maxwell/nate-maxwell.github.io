@@ -69,12 +69,11 @@ data source and databases commonly use B-Tree or LSM tree data structures
 (depending on if they rely on logs or not) to optimize the number of disk hops
 to get to the requested data.
 
-For my database I chose to persist data to disk, meaning the B-Tree was better,
-and also easier to implement. B-Trees are a tree data structure that is
-a self-balancing tree like binary trees, but with reduced height by storing
-multiple values in a node. Internal nodes store t number values where t is the
-degrees of the tree. This makes it more ideal for high latency systems such as
-disk storage.
+For my database I chose to implement the B-Tree structure, as it was easier to
+implement. B-Trees are a tree data structure that is a self-balancing tree like
+binary trees, but with reduced height by storing multiple values in a node.
+Internal nodes store t number values where t is the degrees of the tree. This
+makes it more ideal for high latency systems such as disk storage.
 
 Traversing a B-Tree involves starting at the root, compare the target key with
 the keys in the current node. If it matches, return it. If it’s smaller (or

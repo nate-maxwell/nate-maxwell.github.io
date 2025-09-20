@@ -30,13 +30,89 @@ the higher level concepts surrounding most databases. Mainly this gave me a
 frame of reference for how to lay out the entire project using Petrov's layered
 architecture
 
-<img src="https://i.imgur.com/Ktovko1.png">
+# Data Structure and Memory
+
+Databases are primarily just blocks of bytes stored in a file. Shocking, I
+know. Typically, these are segments of 4 KiB blocks, although sometimes are 8
+or 16 KiB blocks and are referred to as "pages". The most common size is 4 KiB
+as that is the same size as the standard operating system memory page, making
+it the fastest and most space efficient amount of contiguous data the operating
+system can load at once. Some databases use 8 or 16 KiB pages which still load
+neatly into 2 or 4 OS memory pages with the advantage performing less read
+operations from disk. The trade-off of larger database pages is that they often
+end up with larger amounts of empty space when a user inserts a piece of data
+smaller than the page size.
+
+Having a consistent size means that the storage engine can simply open a file
+and read some number of pages in multiplied by the size of a page to get the
+start of a page. Almost always developers will mark the start of a page with a
+"magic number" which is a sequence of bytes that denotes the start of a page.
+This is to verify that the page offset was correctly determined and that no
+drifting occurred when inserting/updating pages. It would be a massive
+coincidence that another program placed the exact byte values you were looking
+for at the exact offset you were reading. Retrieving a value means finding the
+correct page number and then reading `pageNum * pageSize` bytes into the file
+and parsing out all the rows in that page.
+
+A page is just an array of bytes. Anything can be stored in a page, although
+there are some common configurations that many databases use. The most common
+types of pages are 'meta' pages that act like table of contents for the file,
+'freelist' pages which track pages that are no longer used, and the primary
+data page that houses user-inserted data.
+
+<img src="https://i.imgur.com/EzDb1p9.png">
+
+Data pages contain the values inserted by users as well as references to other
+pages.
+
+Sometimes there are 'overflow' pages which occur when data that is
+larger than the size of a page is inserted and the extra data must be stored in
+an additional page.
+
+The goal is to minimize the number of times a query must read from the primary
+data source and databases commonly use B-Tree or LSM tree data structures
+(depending on if they persist to disk or are primarily stored in memory) to
+optimize the number of disk hops to get to the requested data.
+
+For my database I chose to persist data to disk, meaning the B-Tree was better,
+and also easier to implement. B-Trees are a tree data structure that is
+a self-balancing tree like binary trees, but with reduced height by storing
+multiple values in a node. Internal nodes store t number values where t is the
+degrees of the tree. This makes it more ideal for high latency systems such as
+disk storage.
+
+Traversing a B-Tree involves starting at the root, compare the target key with
+the keys in the current node. If it matches, return it. If it’s smaller (or
+falls between two keys), follow the corresponding child pointer. Repeat until
+the key is found or a leaf is reached.
+
+If inserting a key into a full node, create two new half-full nodes by moving
+the median key up into the parent. Keys less than the median stay in the left
+node, keys greater go in the right node. If the parent is also full,
+recursively split it, possibly creating a new root.
+
+<img src="https://i.imgur.com/ZfOUEBx.png">
+
+Now from this diagram, you can see in the final tree, if we want to request 5
+we only have 3 disk hops to perform to get to the requested value.
+
+Most databases persist data to disk, but some only store data in memory. These
+are referred to as 'main memory' databases. Storing purely in memory has the
+advantage of being orders of magnitude faster than reading from disk. Main
+memory databases may persist data to disk as a recovery feature so that the
+tables can be repopulated in the event of a power-loss, although some databases
+like Redis are purely ephemeral and do not persist data for any reason.
 
 # Architecture
 
+<img src="https://i.imgur.com/Ktovko1.png">
+
+Diagram taken from Database Internals.
+
 ### Transport Layer
 Most databases use a client/server model where they manage requests among nodes
-or database instances. This hands incoming requests to the query parser.
+or database instances. This sends incoming requests to the query parser, to
+other shards on a network, or back to the requesting client.
 
 ### Query Processor
 This layer has two primary purposes. The first is to parse the custom query

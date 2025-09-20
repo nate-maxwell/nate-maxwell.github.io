@@ -151,7 +151,7 @@ new job.
 # Distributed Back-End
 
 Now I have my own message broker, [Mycelia](https://nate-maxwell.github.io/go-mycelia-event-broker/),
-which I've written about in teh past, and my own database. Next I would like to
+which I've written about in the past, and my own database. Next I would like to
 look into making a simplistic container app to host back-end systems inside.
 Then I will have a container to deploy systems in, a database for them to
 manage, and a broker for them to communicate, all made entirely by myself.

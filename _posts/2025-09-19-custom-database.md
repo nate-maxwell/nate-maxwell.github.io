@@ -66,8 +66,8 @@ an additional page.
 
 The goal is to minimize the number of times a query must read from the primary
 data source and databases commonly use B-Tree or LSM tree data structures
-(depending on if they persist to disk or are primarily stored in memory) to
-optimize the number of disk hops to get to the requested data.
+(depending on if they rely on logs or not) to optimize the number of disk hops
+to get to the requested data.
 
 For my database I chose to persist data to disk, meaning the B-Tree was better,
 and also easier to implement. B-Trees are a tree data structure that is

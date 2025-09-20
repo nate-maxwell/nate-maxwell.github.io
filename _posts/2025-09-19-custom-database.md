@@ -37,7 +37,7 @@ know. Typically, these are segments of 4 KiB blocks, although sometimes are 8
 or 16 KiB blocks and are referred to as "pages". The most common size is 4 KiB
 as that is the same size as the standard operating system memory page, making
 it the fastest and most space efficient amount of contiguous data the operating
-system can load at once. Some databases use 8 or 16 KiB pages which still load
+system can load at once. Some databases use 8 or 16 KiB pages which still loads
 neatly into 2 or 4 OS memory pages with the advantage performing less read
 operations from disk. The trade-off of larger database pages is that they often
 end up with larger amounts of empty space when a user inserts a piece of data

@@ -54,6 +54,7 @@ to 1 space, eliminating any floating point UV values.
 
 <p align="center">
 <img src="https://i.imgur.com/mM88rGZ.png">
+</p>
 
 Here you can see the effect applied to some noise texture. I've multiplied and
 divided by a value of 10, which gives us 10 pixels. The number chosen will

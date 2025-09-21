@@ -52,23 +52,30 @@ third quadrant's case using floor, we're left with whole numbers for that axis.
 If we divide by the previous number we fit all of these values back into the 0 
 to 1 space, eliminating any floating point UV values.
 
+<p align="center">
 <img src="https://i.imgur.com/mM88rGZ.png">
 
 Here you can see the effect applied to some noise texture. I've multiplied and
 divided by a value of 10, which gives us 10 pixels. The number chosen will
 equal the resolution, so to speak.
 
+<p align="center">
 <img src="https://i.imgur.com/RlOEbkX.png">
+</p>
 
 From here we can apply this effect to a post process material by applying the
 calculation to some SceneTexture UVs and piping out the color like so:
 
+<p align="center">
 <img src="https://i.imgur.com/O3NwOIx.png">
+</p>
 
 When applied to an unbound volume, we have effectively crunched the resolution
 of the entire scene.
 
+<p align="center">
 <img src="https://i.imgur.com/zES9kt5.png">
+</p>
 
 Ideally, in a full retro graphics game, the other 3 points are also applied. It
 seems today that too many developers stop here and assume they've achieved the
@@ -78,11 +85,15 @@ than its PS1 counterpart. Meanwhile, the PS1 was a lower bit system and therefor
 only used integers for vertex position resulting in that "wobbly" look on the
 models.
 
+<p align="center">
 <img src="https://i.imgur.com/qJYuexV.gif">
+</p>
 
 This is also very trivial to achieve. We perform the same method but using our
 Camera Relative World Position as our source values to offset. We just apply
 the crunched values to the vertexes instead of UVs. The effect looks much
 better on lower poly models than higher ones.
 
+<p align="center">
 <img src="https://i.imgur.com/1hcrO0h.png">
+</p>

@@ -53,7 +53,9 @@ and Mycelia itself.
 The protocol comprises 3 parts - a fixed field sized header, a variable field
 sized sub-header, and a body.
 
+<p align="center">
 <img src="https://i.imgur.com/UE35YBK.png">
+</p>
 
 ## Header
 The header contains 4 fields, although I expect one to be removed upon full
@@ -109,7 +111,9 @@ sub-header fields, they contain a `uint32` length prefix and a value.
 but they only contain the one field. This field is the delivery payload to the
 subscriber.
 
+<p align="center">
 <img src="https://i.imgur.com/6hPqZgC.png">
+</p>
 
 These are read and fed to the broker as goroutines which then get parsed into
 struct objects and ran through the system. Based on the protocol version, some

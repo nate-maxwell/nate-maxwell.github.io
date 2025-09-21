@@ -40,4 +40,6 @@ share the previous one's values and then swap back.
 
 Here is the basic instance hierarchy I've settled on at work.
 
+<p align="center">
 <img src="https://i.imgur.com/ovar1YD.png">
+</p>

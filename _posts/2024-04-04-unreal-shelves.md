@@ -50,7 +50,9 @@ Seriously, why are there so many?!
 
 Here you can see the UMG toolbar:
 
+<p align="center">
 <img src="https://i.imgur.com/HaFm5S6.png">
+</p>
 
 This has been great for doing blueprint startup scripts without needing to load
 another asset, but lately I've been doing the opposite. I use this previously
@@ -116,7 +118,9 @@ def main() -> None:
 
 Which results in much more screen space for artists like so:
 
+<p align="center">
 <img src="https://i.imgur.com/u3DI3rY.png">
+</p>
 
 Either method works, but I feel like I have much more control in the UMG method
 for generating layout and stylesheets, although my current UMG toolbar buttons

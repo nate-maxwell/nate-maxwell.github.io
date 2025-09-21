@@ -58,7 +58,9 @@ types of pages are 'meta' pages that act like table of contents for the file,
 'freelist' pages which track pages that are no longer used, and the primary
 data page that houses user-inserted data, as well as pointers to child pages.
 
+<p align="center">
 <img src="https://i.imgur.com/EzDb1p9.png">
+</p>
 
 Sometimes there are 'overflow' pages which occur when data that is
 larger than the size of a page is inserted and the extra data must be stored in
@@ -85,8 +87,9 @@ the median key up into the parent. Keys less than the median stay in the left
 node, keys greater go in the right node. If the parent is also full,
 recursively split it, possibly creating a new root.
 
+<p align="center">
 <img src="https://i.imgur.com/ZfOUEBx.png">
-
+</p>
 Now from this diagram, you can see in the final tree, if we want to request 5
 we only have 3 disk hops to perform to get to the requested value.
 
@@ -99,7 +102,9 @@ like Redis are purely ephemeral and do not persist data for any reason.
 
 # Architecture
 
+<p align="center">
 <img src="https://i.imgur.com/Ktovko1.png">
+</p>
 
 Diagram taken from Database Internals.
 
@@ -154,7 +159,9 @@ can vary from row to row.
 After intensely researching night after night, suddenly realizing it was 3am, I
 decided to make an attempt at my own database.
 
+<p align="center">
 <img src="https://i.imgur.com/BB4lfvi.png">
+</p>
 
 I chose a KV store as the data structure is simpler, for learning purposes, and
 it can reasonably emulate relational table functionality by staggering the data
@@ -195,7 +202,9 @@ worker before the timer expires, the worker is shut down as the table is not
 likely to be requested frequently. This allows the database to use n number OS
 threads where n is the number of active, or hot, tables.
 
+<p align="center">
 <img src="https://i.imgur.com/YsS0QXS.png">
+</p>
 
 OrchidDB has its own query syntax, which is pretty simplistic at present. There
 are currently only 5 commands:

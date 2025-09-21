@@ -21,7 +21,9 @@ However, on occasion, he would want the machine to make a build immediately
 after adjusting some critical system. This would require him to remote into the
 machine and run the bat file jenkins would load to create another test build.
 
+<p align="center">
 <img src="https://i.imgur.com/0XrBjj8.jpg">
+</p>
 
 Coincidentally, at the same time, I had been experimenting with event brokers
 for distributed pipeline events at work.
@@ -37,7 +39,9 @@ artist workstations only needed to connect to one other machine, and they could
 gain access to full pipeline functionality. This all sounds way more
 interesting than it really is.
 
+<p align="center">
 <img src="https://i.imgur.com/fQxTvqb.png">
+</p>
 
 This was achieved using my, currently simple, event broker Mycelia, which I've
 covered in great detail in another
@@ -56,7 +60,9 @@ the broker for another trip, making observability and event tracking more
 painful. Subscribers specify where in the channel stream they would like to
 receive data.
 
+<p align="center">
 <img src="https://i.imgur.com/q3cwIBJ.png">
+</p>
 
 Mycelia is in the early days of development and uses an incredibly primitive
 custom protocol. Some friends and I who are working on it have written APIs for
@@ -73,19 +79,26 @@ is a procedural way to build messages and we’re good.
 Here's our super advanced gui that sends the string “hello world” in its apex
 form with no capitals or punctuation to the broker.
 
+<p align="center">
 <img src="https://i.imgur.com/wylWdOc.png">
+</p>
 
 Put simply, we package up the gui values and invoke the api python function
 directly from the widget, as shown in this blueprint function.
 
+
+<p align="center">
 <img src="https://i.imgur.com/Tqo3iYG.png">
+</p>
 
 Here I have set up a simplistic test running the broker and a mock subscriber
 on the same machine as the unreal client. On the left you can see the Mycelia
 broker terminal and on the right is the consumer, which just prints its
 incoming data to std out.
 
+<p align="center">
 <img src="https://i.imgur.com/lWVwuZl.png">
+</p>
 
 It's easy now to imagine setting up a bunch of machines, all connected to the
 broker, listening for when a developer signals an event. These could be

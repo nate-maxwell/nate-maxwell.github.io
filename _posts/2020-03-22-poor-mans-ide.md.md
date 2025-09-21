@@ -17,7 +17,9 @@ Lately I’ve found myself fascinated with IDE development. I was recently inspi
 
 Admittedly I got kinda bored partway through, but I did manage to make a working project. There isn’t much to go in depth with, but it does let you edit and save files. It's missing various basic features but I don’t think I will continue working on it. Anyways, here is the Cypher IDE.
 
+<p align="center">
 <img src="https://camo.githubusercontent.com/29e99033c10b6bb16cbdbd73636532a133ecf466be45b9aad4918fe6f26804d9/68747470733a2f2f692e696d6775722e636f6d2f664c666c4355362e706e67">
+</p>
 
 Again, this was mainly to learn more about syntax highlighting and here is the basics of how Cypher works:
 

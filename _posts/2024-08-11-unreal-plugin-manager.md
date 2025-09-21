@@ -216,7 +216,9 @@ Our core plugin that manages the unreal toolbar is loaded into every project,
 and from here we optionally load each other plugin and add a button to the
 toolbar for them.
 
+<p align="center">
 <img src="https://i.imgur.com/QT0oHvC.png">
+</p>
 
 This is a simplistic version of our implementation, as the `context.json` file
 contains more data about what kind of tool is being inspected. Some plugins are

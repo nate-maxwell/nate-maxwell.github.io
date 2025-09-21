@@ -103,7 +103,7 @@ like Redis are purely ephemeral and do not persist data for any reason.
 # Architecture
 
 <p align="center">
-<img src="https://i.imgur.com/Ktovko1.png">
+<img src="https://i.imgur.com/9fObMNS.png">
 </p>
 
 Diagram taken from Database Internals.

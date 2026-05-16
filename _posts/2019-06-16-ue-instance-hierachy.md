@@ -12,6 +12,8 @@ tags:
     - "material"
 ---
 
+# Material Instance Hierarchy
+
 Today's post will be very short. I've been increasingly frustrated with certain
 artists competing for the 'better' master material. Mainly competing over the
 better instruction to feature ratio. In production this has been painful as

@@ -15,6 +15,8 @@ tags:
     - "distribution"
 ---
 
+# Briefly Looking into Protocols
+
 Today I am writing a follow-up post to the post about my golang message broker
 I posted back in [May](https://nate-maxwell.github.io/go-mycelia-event-broker/).
 I still think it has quite a ways to go before a version  1 release.
@@ -36,7 +38,7 @@ def process_command(cmd: Command, address: str, port: int) -> None:
         sock.sendall(payload)
 ```
 ```
->>> "1;;SendMessage;;123e4567-e89b-12d3-a456-426614174000;;example_route;;channel1;;10.0.0.52:4401"
+>>> "1;;SendMessage;;123e4567-e89b-12d3-a456-426614174000;;example_route;;channel1;;10.0.0.52:4401\n"
 ```
 Where I checked for `\n` characters to denote message termination.
 

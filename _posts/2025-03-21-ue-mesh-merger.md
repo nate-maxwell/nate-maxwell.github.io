@@ -14,6 +14,8 @@ tags:
     - "indie"
 ---
 
+#UE Mesh Merger
+
 Many friends of mine are working on small indie games with 2 to 8-man teams.
 Frequently these teams engage in the discussion of optimization efficiency.
 Specifically they weigh the resources they have, time, skill sets, amount of

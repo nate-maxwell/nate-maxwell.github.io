@@ -13,6 +13,8 @@ tags:
     - "coding"
 ---
 
+# Poor Man's IDE
+
 Lately I’ve found myself fascinated with IDE development. I was recently inspired by seeing a github repo where someone had used PyQt and Scintilla to parse various languages in a custom developer environment. I wanted to try this myself, although in a much simpler approach, mainly to learn about syntax highlighting. I didn’t want to get lost in learning about massive parsing and lexing frameworks, like Scintilla, but I was curious about state-machine or rules based syntax highlighting.
 
 Admittedly I got kinda bored partway through, but I did manage to make a working project. There isn’t much to go in depth with, but it does let you edit and save files. It's missing various basic features but I don’t think I will continue working on it. Anyways, here is the Cypher IDE.

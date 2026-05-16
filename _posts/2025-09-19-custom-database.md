@@ -16,6 +16,8 @@ tags:
     - "application"
 ---
 
+# Orchid DB
+
 Purely driven by curiosity I have spent the last couple of weeks learning about
 the inner workings of databases. Not how to set one up using an existing type
 like sql, but what is actually happening in the `.db` file and how they're
@@ -30,7 +32,7 @@ the higher level concepts surrounding most databases. Mainly this gave me a
 frame of reference for how to lay out the entire project using Petrov's layered
 architecture
 
-# Data Structure and Memory
+## Data Structure and Memory
 
 Databases are primarily just blocks of bytes stored in a file. Shocking, I
 know. Typically, these are segments of 4 KiB blocks, although sometimes are 8
@@ -100,7 +102,7 @@ memory databases may persist data to disk as a recovery feature so that the
 tables can be repopulated in the event of a power-loss, although some databases
 like Redis are purely ephemeral and do not persist data for any reason.
 
-# Architecture
+## Architecture
 
 <p align="center">
 <img src="https://i.imgur.com/9fObMNS.png">
@@ -134,7 +136,7 @@ affected by the query), recovery mechanisms, the primary read/write methods,
 locking components, and so on. Basically, anything that handles the actual
 stored data.
 
-# SQL vs NoSQL
+## SQL vs NoSQL
 Databases are typically classified into two broad families: Sql and NoSql.
 
 Sql databases, broadly speaking, are any relational database that uses
@@ -154,7 +156,7 @@ Some examples are:
 and columns, but unlike relational databases, the names and format of columns
 can vary from row to row.
 
-# Orchid DB
+## The Database
 
 After intensely researching night after night, suddenly realizing it was 3am, I
 decided to make an attempt at my own database.
@@ -226,7 +228,7 @@ Currently, OrchidDB has all but the in-memory table cache and the table worker
 timers. For the time-being I am putting the project down as I am moving for a
 new job.
 
-# Distributed Back-End
+## Distributed Back-End
 
 Now I have my own message broker, [Mycelia](https://nate-maxwell.github.io/go-mycelia-event-broker/),
 which I've written about in the past, and my own database. Next I would like to

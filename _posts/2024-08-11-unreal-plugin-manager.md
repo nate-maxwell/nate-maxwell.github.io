@@ -13,6 +13,8 @@ tags:
     - "UMG"
 ---
 
+# Simple UE Plugin Registration
+
 I've been poking around the broader facility pipeline code and see this
 interesting implementation. Each python module has a `/module/src/code.py` file,
 but there is also a `/module/ctx/context.py` file in every repo. This

@@ -14,6 +14,8 @@ tags:
     - "mask"
 ---
 
+# Mask-Based Master Material
+
 As of the past few weeks I've been going through my preferred material library
 and have been going through my master materials for water, glass, eyes,
 foliage, car paint, etc. Recently at work we have been doing a lot of trailer

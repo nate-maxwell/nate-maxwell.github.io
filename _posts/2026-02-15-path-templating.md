@@ -165,3 +165,5 @@ which one it's working with at all times. No `Fat Struct` carrying every possibl
 field across the whole pipeline, no `dict[str, Any]` black hole, no guessing whether
 the key is `"filepath"` or `"file_path"`. Just a small dataclass, a generic resolver,
 and an IDE that's keeping up with both.
+
+You can check out the full library [here](https://github.com/nate-maxwell/templar).

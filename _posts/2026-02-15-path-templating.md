@@ -21,7 +21,7 @@ tags:
 
 I abhor dictionaries. I _haaate_ them. Sometimes they are the correct type or data
 structure to use. However, most of the time I interact with one I find myself
-saying "This could have been a class". Typically, I'm asking this question because
+saying "Couldn't this have been a class?" Typically, I'm asking this question because
 the dictionary does not vary in shape. Dynamic dictionaries are where the type
 shines the most. Most of the time dictionaries are used because they're a
 primitive that all libraries/systems share.

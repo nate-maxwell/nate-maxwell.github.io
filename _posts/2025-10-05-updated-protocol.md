@@ -2,7 +2,7 @@
 layout: post
 title: "[GO] Rhizome Protocol"
 date: 2025-10-05
-permalink: /custom-protocol/
+permalink: /updated-protocol/
 author: Nate Maxwell
 categories:
     - "Go"

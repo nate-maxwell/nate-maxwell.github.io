@@ -12,3 +12,4 @@ plugins:
 markdown: kramdown
 highlighter: rouge
 theme: jekyll-theme-hacker
+mermaid: true

@@ -28,7 +28,7 @@ journey into learning language development, as well as help me formalize my
 understandings.
 
 I have dabbled in language design before, but never enough to get anything
-working of my own design.
+ of my own design working.
 I was inspired to start language development again after watching a
 [Logan Smith](https://youtu.be/ebqKYLKjL6U?si=feEhpK_Y4MgmLmtT) video talking
 about the Verse scripting langauge coming in Unreal Engine 6. Previous to this

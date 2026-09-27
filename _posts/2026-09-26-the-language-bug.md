@@ -74,7 +74,7 @@ Almost every problem I thought about I could fairly easily tuck behind the ol'
 "Skill Issue" label.
 
 One of the things I love doing most in software development when I'm faced with
-a particularly tricky problem is to look at what I'm currently doing, and see if
+a particularly tricky problem is to look at what I'm currently doing and see if
 I can do the opposite instead. Sounds strange, right? A lot of the time it's
 something like push instead of pull. In this case it was to stop looking for
 things to add to solve some problem and instead to simply remove problems I had

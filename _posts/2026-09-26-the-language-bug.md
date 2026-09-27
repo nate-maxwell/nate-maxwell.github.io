@@ -65,7 +65,7 @@ What was I trying to solve?
 
 I started to think about the kinds of problems I was facing in my job, my personal
 projects. Things I noticed in my coworker's work, things I noticed in young
-code-bases. Anything I had ever worked on.
+code-bases, mature code-bases. Anything I had ever worked on.
 
 There are many criticisms of C++. One of which is any time someone makes a
 criticism of C++, C++ developers always come back with how you should just be a

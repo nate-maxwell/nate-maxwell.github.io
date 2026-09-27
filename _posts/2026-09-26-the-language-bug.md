@@ -84,19 +84,21 @@ What problems did I have with languages?
 
 After much reflection I realized I really dislike chained constructors, which was
 interesting to realize because I _love_ encapsulation. I don't necessarily dislike
-constructors. I hate when I have a class that I inherit from, but I need to change
-some value, but that value is initialized on the parent constructor, and the
-parent constructor uses that value to initialize the class's state. Changing the
-value before calling the parent's constructor means it gets overridden by the
-parent constructor, and setting it after means the parent has already initialized
-its state using the wrong value. Invariably I always have to rewrite my parent's
-constructor to make the value parameterized, but depending on the language I
-can't always set a default value, and therefore affect all the places that
-instantiate this object, so I end up rewriting the parent's constructor on my
-derived class instead.
+constructors.
 
-I love having a little contain of data that I can send around with a tiny little
-library attached to it that affects the data in the container, or produces some
+I hate when I have a class that I inherit from, but I need to change
+some value. Unfortunately that value is initialized on the parent constructor,
+and the parent constructor uses that value to initialize the class's state.
+Changing the value before calling the parent's constructor means it gets overridden
+by the parent constructor, and setting it after means the parent has already
+initialized its state using the wrong value. Invariably I always have to rewrite
+the parent's constructor to make the value parameterized, but depending on the
+language I can't always set a default value, and therefore affect all the places
+that instantiate this object, so I end up rewriting the parent's constructor on
+my derived class instead.
+
+I love having a little container of data that I can send around with a tiny little
+library attached to it that affects the contained data, or produces some
 behavior using that data. Structs and struct methods are one of the design
 decisions I really like about Go.
 

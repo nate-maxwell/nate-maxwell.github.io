@@ -69,7 +69,7 @@ code-bases, mature code-bases. Anything I had ever worked on.
 
 There are many criticisms of C++. One of which is any time someone makes a
 criticism of C++, C++ developers always come back with how you should just be a
-better developer and the language shouldn't hold your hand the entire way.
+better developer and the language shouldn't hold your hand all the time.
 Almost every problem I thought about I could fairly easily tuck behind the ol'
 "Skill Issue" label.
 

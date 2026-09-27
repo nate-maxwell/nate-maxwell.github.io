@@ -133,8 +133,8 @@ language concept in following posts, and describing my take on them and how they
 are implemented in Silver.
 
 Starting with today's feature - Silver has some interesting type features. Many
-features of the language steer the user towards using structs. One of which is
-**Argument Destructuring**.
+features of the language steer the user towards using structs. The one alluded
+to earlier: **Argument Destructuring**.
 
 First, the usual defining of terms. _Arguments_ are what get passed into a
 function, while _Parameters_ are the accepted variables in the function signature.

@@ -105,9 +105,14 @@ decisions I really like about Go.
 Switching from classes to structs means I need some way to do polymorphism. Go
 solves this through interfaces, or structural typing, but I didn't want to do that.
 I wanted to make an interpreted language and structural typing works best in
-compiled languages, in my opinion.
+compiled languages, in my opinion. I could have done something like Java
+interfaces or rust traits, and I almost went that direction. I still wanted to
+have something unique and very nearly tried making rust traits but with the
+ability to define default behavior for a trait. I was explaining the problem to
+a friend, and I don't remember the exact line that lead to it, but I ended up
+going in a different direction. This lead to the first original feature for my
+language. Original to me, anyway.
 
-That's when I had an idea for my first original feature. Original to me, anyway.
 I hadn't seen it in other languages and that usually means one of two things:
 * Its truly original
 * Everyone has decided not to do this for a good reason

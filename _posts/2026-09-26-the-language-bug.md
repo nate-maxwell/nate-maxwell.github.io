@@ -110,16 +110,7 @@ interfaces or rust traits, and I almost went that direction. I still wanted to
 have something unique and very nearly tried making rust traits but with the
 ability to define default behavior for a trait. I was explaining the problem to
 a friend, and I don't remember the exact line that lead to it, but I ended up
-going in a different direction. This lead to the first original feature for my
-language. Original to me, anyway.
-
-I hadn't seen it in other languages and that usually means one of two things:
-* Its truly original
-* Everyone has decided not to do this for a good reason
-
-Either way, I thought it was interesting and made for a different kind of thinking
-when programming, so I went with it. The very beginnings of a language identity
-began to take shape.
+going in a different direction. This lead to the first feature for my language.
 
 Enter [Silver](https://github.com/nate-maxwell/silver-lang).
 
@@ -134,7 +125,7 @@ are implemented in Silver.
 
 Starting with today's feature - Silver has some interesting type features. Many
 features of the language steer the user towards using structs. The one alluded
-to earlier: **Argument Destructuring**.
+to earlier: **Row Polymorphism**.
 
 First, the usual defining of terms. _Arguments_ are what get passed into a
 function, while _Parameters_ are the accepted variables in the function signature.
@@ -176,10 +167,13 @@ Here, `print_postion` takes an integer named "x", and an integer named "y". We
 instead pass a `Position` struct in, and since it isn't an integer named "x",
 Silver offers the struct's fields as the remaining arguments.
 
+Row polymorphism is a kind of polymorphism that allows one to write programs
+that are structurally (rather than nominally) polymorphic on record types
+and/or variants.
+
 I find this incredibly interesting because it's not a way I've thought about
 polymorphism before. Typically, when you think of polymorphism, you think of a
-single parameter of a function that can accept multiple types. Destructuring is
-more like function overloading but without having to rewrite the function.
+single parameter of a function that can accept multiple types.
 
 In C++ this would be represented as
 ```cpp
@@ -201,7 +195,7 @@ name and type to offer up. This is super fascinating for library authoring. You
 can write the behavior you want, and consumers can define their preferred objects
 while still using library functions with minimal conversion.
 
-There are many more features that make use of, or extend the destructuring
+There are many more features that make use of, or extend the polymorphism
 system, but I won't go over them here. I'll slowly explain them over more posts
 as I write about my findings on other topics.
 

@@ -265,7 +265,7 @@ type _ expr =
 
 Like ADTs, each expression to the right of the `:` can differ per variant.
 In this case each expression is a constraint on the kinds of data that field can
-hold. The lower and upper bounds of values, which makes it a _generalized_ ADT.
+hold. The lower and upper bounds of values are what makes it a _generalized_ ADT.
 
 This is partly why most languages begin their development in OCaml. OCaml has
 many features that map really, really well to lambda calculus (the math primarily

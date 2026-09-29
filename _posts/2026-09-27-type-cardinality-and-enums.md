@@ -247,10 +247,10 @@ enum Message {
 Which are somewhat similar to the enum class in Python, which are just Python
 classes, and therefore completely dynamic in shape.
 
-## Generalized Algebraic Types
+## Generalized Algebraic Data Types
 
 Topping the complexity curve we have Generalized Algebraic Data Types (GADTs),
-an extension of ADTs to make them even more expressive. In many cases, these are
+an extension of ADTs to make them even more expressive. In many cases these are
 ADTs whose variant are subjected to some constraint on their validity.
 
 Here is an ADT in OCaml, which is essentially an enum.
@@ -263,8 +263,9 @@ type _ expr =
   | If   : bool expr * 'a expr * 'a expr -> 'a expr
 ```
 
-Each expression to the right of the `:` can differ per variant, which makes it
-a _generalized_ ADT.
+Like ADTs, each expression to the right of the `:` can differ per variant.
+In this case each expression is a constraint on the kinds of data that field can
+hold. The lower and upper bounds of values, which makes it a _generalized_ ADT.
 
 This is partly why most languages begin their development in OCaml. OCaml has
 many features that map really, really well to lambda calculus (the math primarily

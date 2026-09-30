@@ -169,7 +169,7 @@ let p = Position{10, 20}
 print_position(p)
 ```
 ```
->> Position{x: 10, Y: 20}
+>> 10, 20
 ```
 
 Here, `print_postion` takes an integer named "x", and an integer named "y". We

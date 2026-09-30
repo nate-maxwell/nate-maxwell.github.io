@@ -31,13 +31,13 @@ switch object := object.(type){
 }
 ```
 and how I must have completely mismanaged my inheritance tree. I die a little
-inside, every time I get this feedback. It works. I do not have to redo my
+inside every time I get this feedback. It works. I do not have to redo my
 hierarchy to make the same code do the same thing. Would it be better if the
 hierarchy accommodated this? Yes. Would it be better if I didn't have to check
 the object type occasionally? Yes. Is it the end of the world when this happens?
 No.
 
-I often prefer composition to inheritance anyway (again, shamelessly plugging Go).
+I often prefer composition to inheritance, anyway (again, shamelessly plugging Go).
 Often times I write functions that take an object, then later stare at them
 wondering if they could be used in systems that don't operate on my objects. Do
 I want to refactor these functions to take primitives instead? What if the
@@ -63,7 +63,7 @@ let p = Position{10, 20}
 print_position(p)
 ```
 ```
->> Position{x: 10, y: 20}
+>> 10, 20
 ```
 Here, silver first offers the struct into the function. After seeing that the
 struct does not match the type of the corresponding positional argument, Silver

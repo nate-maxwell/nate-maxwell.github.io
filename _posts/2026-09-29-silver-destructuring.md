@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[SLVR] Silver Object Destructuring"
-date: 2026-09-28
+date: 2026-09-29
 permalink: /silver-object-destructuring/
 author: Nate Maxwell
 categories:
@@ -14,7 +14,7 @@ tags:
 
 # Silver's Object Destructuring
 
-_"The price of reliability is the pursuit of the utmost simplicity"_ - Edsgar Dijkstra.
+_"The bigger the interface, the weaker the abstraction"_ - Rob Pike.
 
 I like objects. I like composing them, shipping them around, packing and
 unpacking them.
@@ -96,16 +96,16 @@ details.name # Ada
 Here, `Person` is embedded in `Details`, so any of `Person`'s fields can be
 accessed through the `Details` namespace.
 
-Under the hood in Silver struct objects have a `.get()` method. When something
-requests a field on a struct, it called the `.get()` method. The `.get()` method
-checks immediate fields, and then checks embedded structs for their fields,
+Under the hood, in Silver struct objects have a `.get()` method. When something
+requests a field on a struct it calls the `.get()` method. The `.get()` method
+checks immediate fields, and then checks embedded structs for their fields
 recursively. When a struct is passed to a function, and it doesn't match the
 parameter type, the function calls the`.get()` method on the struct and attempts
 to get a field with a matching name to use instead.
 
 Silver refers to this as "destructuring". The opposite of structuring, pulling
 the pieces apart to use separately. This also sounds pretty similar to row
-polymorphism, so how is it different? Let's take a look at the following:
+polymorphism. So how is it different? Let's take a look at the following:
 
 ```
 type Point = struct {
@@ -122,7 +122,7 @@ plot(current_position, 7)
 ```
 
 Here, `plot()` takes 3 arguments. When `plot()` is called, a `Point` is passed
-in, as well as an integer `7`. Traditionally row polymorphism takes a singular
+in, as well as the integer `7`. Traditionally row polymorphism takes a singular
 record and extracts all expected rows by name and type from the passed record.
 In silver the passed values can be mixed. Here is a slightly more complex
 example:
@@ -142,12 +142,27 @@ let signature = fn(a: int, b: int, c: int, d: int, e: str) { ... }
 
 signature( Record1{1, 2}, Record2{3, 4}, "hello" )
 ```
-In silver, this is completely valid.
+In silver, this is completely valid. In a row polymorphic language, each
+destructurable record could have to be declared separately. Using some pseudocode
+it would look something like this:
+```
+signature :: { a: int, b: int | r1 } -> { c: int, d: int | r2 } -> str -> ()
+```
+with an argument, `| r1`, representing unknown rows that would also be received.
+
+Another way to put it is that row polymorphism operates at a _type_ level while
+Silver operates at a _value_ level. And working at the value level means that
+function signatures are shaped exactly as their operations demand while still
+accepting multiple types.
+
+This isn't to be confused with duck typing or structural typing either.
+Typing like Python protocols, Rust traits, or Go interfaces. All of them pass
+more data than the functions require and are more behaviorally focussed.
 
 ---
 
 What's fascinating is that modules behave much the same way inside the
-interpreter. Modules in Silver are objects, like OCaml or Python, and can be
+interpreter. Modules in Silver are objects, like in OCaml or Python, and can be
 passed to functions. From this, module destructuring can take place:
 ```
 let io = import("core:io")
@@ -188,7 +203,7 @@ example( Foo{32} )
 
 ---
 
-As I've stated before, I love encapsulation, just not inheritance. I love having
+As I've stated before: I love encapsulation, just not inheritance. I love having
 little containers of data with behavior attached to them. Naturally, Silver has
 struct methods, like Rust or Go. Unlike other languages, Silver takes advantage
 of its polymorphism in its method implementation.
@@ -199,28 +214,27 @@ type Counter = struct {
     increment: call(self: Counter, amount: int) int
 }
 
-let increment = fn(self: Counter, amount: int) int {
+let inc_function = fn(self: Counter, amount: int) int {
     self.value = self.value + amount
     return self.value
 }
 
-let counter = Counter{0, increment}
-counter.increment(3) # equivalent to increment(counter, 3)
+let counter = Counter{0, inc_function}
+counter.increment(3) # equivalent to inc_function(counter, 3)
 ```
 
 Here, `Counter` is a struct with an `increment` field whose type must be a
 function with the signature `(self: Counter, amount: int) int` - one that
 takes a `Counter` and integer, and returns an integer.
 
-Later, a function also named `increment()` is declared, matching that signature.
-Then a counter is created with the `increment()` function given to it. From here
+Later, a function named `inc_function()` is declared, matching that signature.
+Then a counter is created with `inc_function()` given to it. From here
 the function can be called by the `Counter` namespace as `counter.increment(3)`.
 Silver first looks to see if the host struct can be passed as the first argument.
 If so, the host struct is passed through and destructuring begins. Then the
-integer `3` is given and the signature is completely fulfilled.
+integer `3` is given and the signature is fulfilled.
 
-Host struct destructuring can be ignored if desired and a method can be pure,
-if desired.
+Host struct destructuring can be ignored and a method can be pure, if desired.
 
 ```
 type Dog = struct {
@@ -236,3 +250,9 @@ fido.shout("bark!")
 ```
 >> bark!
 ```
+
+---
+
+There are even more features in Silver that take advantage of this destructuring
+system, but I think they deserve their own posts. Hopefully this conveys the
+novelty of Silver's type system, if not its flexibility.
